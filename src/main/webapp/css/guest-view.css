@@ -1,0 +1,25 @@
+html, body {
+    overflow-x: hidden !important;
+    max-width: 100%;
+}
+
+.container-margin {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.data-color {
+    color: darkred;
+}
+
+.background-darkred {
+    background-color: darkred;
+}
+
+.centered {
+    text-align: center;
+}
+
+.textbox-margin {
+    margin: 5px;
+}

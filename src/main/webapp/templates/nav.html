@@ -1,0 +1,57 @@
+<!doctype html>
+<!--suppress HtmlUnknownTarget -->
+<html lang="en" class="h-100">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Nav</title>
+</head>
+<body class="d-flex flex-column h-100">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Navbar">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.jsp">Naklaken Hotel</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nak-navbar"
+                aria-controls="nak-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nak-navbar">
+            <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                <li class="nav-item">
+                    <a id="nav-countability" class="nav-link" aria-current="page"
+                       href="countability.jsp">Countability</a>
+                </li>
+                <li class="nav-item">
+                    <a id="nav-users" class="nav-link" href="user-manager.jsp">Users</a>
+                </li>
+                <li class="nav-item">
+                    <a id="nav-guests" class="nav-link" href="guest-manager.jsp">Guests</a>
+                </li>
+                <li class="nav-item">
+                    <a id="nav-bands" class="nav-link" href="rfid.jsp">Bands List</a>
+                </li>
+                <li class="nav-item">
+                    <a id="nav-bookings" class="nav-link" href="booking-manager.jsp">Bookings</a>
+                </li>
+                <li class="nav-item">
+                    <a id="nav-services" class="nav-link" href="services.jsp">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a id="nav-login" class="nav-link" href="login-user-guest.jsp">Login</a>
+                </li>
+            </ul>
+            <span class="navbar-text">
+                <button class="btn btn-outline-secondary logout-button" onclick="logoutUser();logoutGuest()">Logout</button>
+            </span>
+        </div>
+    </div>
+</nav>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

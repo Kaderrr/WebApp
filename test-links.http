@@ -1,0 +1,138 @@
+GET http://localhost:8080/App/rest/match/last-booking-of-rfid/b123b
+Accept: application/json
+
+###
+DELETE http://localhost:8080/App/rest/match/delete-one?id=7
+Content-Type: application/json
+
+###
+GET http://localhost:8080/App/rest/match/all-valid-of-booking/29
+Accept: application/json
+
+###
+DELETE http://localhost:8080/App/rest/transactions/delete-last-by-user-id
+Content-Type: application/x-www-form-urlencoded
+
+user_id=B444B
+
+###
+
+GET http://localhost:8080/App/rest/transactions/all
+Accept: application/json
+
+###
+GET http://localhost:8080/App/rest/booking/all
+Accept: application/json
+
+###
+POST http://localhost:8080/App/rest/booking/insert-one
+Content-Type: application/json
+
+{
+  "check_in": "2022-04-26 23:59",
+  "check_out": "2022-04-27 00:00",
+  "room": "B17",
+  "balance": 20,
+  "guest_id": "AX0002",
+  "user_id": "BX001"
+}
+
+###
+GET http://localhost:8080/App/rest/booking/all
+Accept: application/json
+
+###
+POST http://localhost:8080/App/rest/auth/user/login
+Content-Type: application/json
+
+{
+  "email": "kristel@gmail.com",
+  "password": "Kristel12"
+}
+
+###
+POST http://localhost:8080/App/rest/rfid/insert-one
+Content-Type: application/json
+
+{
+  "code": "a123b",
+  "type": "band",
+  "status": "valid"
+}
+
+###
+GET http://localhost:8080/App/rest/rfid/all
+Accept: application/json
+
+###
+GET http://localhost:8080/App/rest/rfid/c18nb
+Accept: application/json
+
+###
+GET http://localhost:8080/App/rest/match/all
+Accept: application/json
+
+###
+GET http://localhost:8080/App/rest/guest/AX0001
+Accept: application/json
+
+###
+GET http://localhost:8080/App/rest/transactions/betweenDates?fromDate=2022-04-04&toDate=2022-04-19
+Accept: application/json
+
+###
+GET http://localhost:8080/App/rest/transactions/all
+Accept: application/json
+
+###
+GET http://localhost:8080/App/rest/transactions/1
+Accept: application/json
+
+###
+POST http://localhost:8080/App/rest/transactions/insert-one
+Content-Type: application/json
+
+{
+  "state": true,
+  "amount": 1.30,
+  "description": "an ice-cream",
+  "user_id": "BX001",
+  "booking_id": 1,
+  "type": "payment"
+}
+
+###
+POST http://localhost:8080/App/rest/user/insert-one
+Content-Type: application/json
+
+{
+  "id": "wsfnckfswddssdsfef",
+  "email": "kreei@gmail.com",
+  "permission_level": "receptionist",
+  "password": "prova100",
+  "isActive": false
+}
+
+###
+POST http://localhost:8080/App/rest/match/insert-one
+Content-Type: application/json
+
+{
+  "booking_id": 42,
+  "code_rfid": "b123bac"
+}
+
+###
+DELETE http://localhost:8080/App/rest/match/delete-last-by-user-id?user_id=SAS01
+
+###
+# You might have to change the linka bit in you PC (not sure)
+# TEST CONNECTION TO DB
+GET http://localhost:8080/App/rest/test/postgre-connection
+Accept: text/json
+
+###
+
+DELETE http://localhost:8080/App/rest/booking/delete/5
+
+###

@@ -1,0 +1,23 @@
+body{
+    padding: 0;
+    margin: 0;
+    background:#f4f4f4;
+
+}
+html,h1,h2,h3,h4,h5,h6,a{
+    font-family: "Raleway", sans-serif;
+}
+p{
+    font-family: "Roboto Flex", sans-serif;
+}
+
+.table-container-size {
+    overflow-y: scroll;
+    height: 500px;
+}
+
+@media print {
+    .no-print {
+        display: none;
+    }
+}

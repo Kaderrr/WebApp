@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+
+
+
+/* introductory */
+
+#introductory-container{
+    background-color: #0a193d;
+    color: white !important;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+}
+
+.introductory-row img{
+    max-width: 70%;
+    height: auto;
+    display: block;
+    padding-left: 30px;
+}
+
+.introductory-row h3, p{
+    padding-left: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.introductory-row a{
+    background-color: white !important;
+    color: black !important;
+    border: none;
+    margin-left: 20px;
+    margin-top: 20px;
+
+}
+#introductory-col{
+    padding-left: 20px;
+}
+/* service */
+#service{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#service h1{
+    padding-bottom: 70px;
+}
+
+/* about */
+
+#about{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#about h1{
+    padding-bottom: 70px;
+}
+
+#about-col ul{
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+#about-col ul li{
+    padding-top: 15px;
+
+}
+
+/* barcode */
+
+#barcode{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#barcode h1{
+    padding-bottom: 70px;
+}
+
+#barcode-col2 ul{
+    padding-top: 90px;
+}
+
+#barcode-col2 ul li{
+    padding-top: 15px;
+}
+
+/* social */
+
+#contact{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#contact h1{
+    padding-bottom: 70px;
+}
+
+.contact-col a:hover img{
+    transform: translateY(-10px);
+}
+
+#contact-row{
+    flex-direction: row;
+}
+
+/* footer */
+
+.mb-3{
+    padding-top: 10px;
+}
+
+
+/* media */
+@media only screen and (max-width: 987px){
+    .navbar-brand{
+        padding-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    #introductory-row img{
+        padding-top: 20px;
+    }
+
+    .contact-col{
+        width: 33%;
+    }
+
+}
+
+.btn-margin{
+    margin: 10px;
+}
